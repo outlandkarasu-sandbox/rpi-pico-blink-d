@@ -1,0 +1,10 @@
+/CMakeCache.txt
+/cmake_install.cmake
+/Makefile
+/pico_flash_region.ld
+/_deps
+/CMakeFiles
+/generated
+/pico-sdk
+/pioasm
+/pioasm-install

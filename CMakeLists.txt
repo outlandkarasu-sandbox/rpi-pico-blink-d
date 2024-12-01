@@ -10,3 +10,13 @@ project(rpi_pico_blink_d)
 pico_sdk_init()
 
 # rest of your project
+
+add_executable(rpi_pico_blink_d
+    blink.c
+    )
+target_compile_definitions(rpi_pico_blink_d PUBLIC CYW43_WL_GPIO_LED_PIN)
+
+target_link_libraries(rpi_pico_blink_d pico_stdlib)
+target_link_libraries(rpi_pico_blink_d pico_cyw43_arch_none)
+
+pico_add_extra_outputs(rpi_pico_blink_d)

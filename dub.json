@@ -1,0 +1,27 @@
+{
+	"authors": [
+		"outlandkarasu"
+	],
+	"description": "A minimal D application.",
+	"license": "BSL-1.0",
+	"name": "rpi_pico_blink_d",
+	"targetType": "staticLibrary",
+	"toolchainRequirements": {
+        "dmd": "no",
+        "gdc": "no",
+        "ldc": ">=1.39.0"
+    },
+	"buildOptions": [
+		"betterC"
+	],
+	"dflags": [
+		"--mtriple=arm-none-eabi",
+		"--defaultlib=",
+		"--debuglib=",
+		"--platformlib=",
+		"--mcpu=cortex-m0plus",
+		"--relocation-model=pic",
+		"--disable-red-zone",
+		"--fno-exceptions"
+	]
+}

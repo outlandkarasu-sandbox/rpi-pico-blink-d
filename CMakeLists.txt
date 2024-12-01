@@ -14,8 +14,8 @@ pico_sdk_init()
 
 # rest of your project
 
-add_executable(rpi_pico_blink_d
-    blink.c
+add_library(rpi_pico_blink_d
+    librpi_pico_blink_d.a
     )
 
 target_link_libraries(rpi_pico_blink_d pico_stdlib)

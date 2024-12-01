@@ -16,12 +16,10 @@
 	],
 	"dflags": [
 		"--mtriple=arm-none-eabi",
+		"--mcpu=cortex-m0plus",
 		"--defaultlib=",
 		"--debuglib=",
 		"--platformlib=",
-		"--mcpu=cortex-m0plus",
-		"--relocation-model=pic",
-		"--disable-red-zone",
 		"--fno-exceptions"
 	]
 }

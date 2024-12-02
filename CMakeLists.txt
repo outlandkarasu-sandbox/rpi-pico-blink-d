@@ -13,12 +13,10 @@ set(CMAKE_CXX_STANDARD 17)
 pico_sdk_init()
 
 # rest of your project
-
-add_executable(rpi_pico_blink_d
-    blink.c
-    )
+add_executable(rpi_pico_blink_d)
 
 target_link_libraries(rpi_pico_blink_d pico_stdlib)
 target_link_libraries(rpi_pico_blink_d pico_cyw43_arch_none)
+target_link_libraries(rpi_pico_blink_d ${CMAKE_CURRENT_SOURCE_DIR}/librpi_pico_blink_d.a)
 
 pico_add_extra_outputs(rpi_pico_blink_d)
